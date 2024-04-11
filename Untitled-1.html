@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML><HEAD><title>Create OnLIne Lead</title>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta content="JavaScript" name="vs_defaultClientScript">
+</HEAD><body bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0" MS_POSITIONING="GridLayout">
+<form id="OnLineLeadForm" method="post" action="https://meademo2.crmnext.com/appsng7/setup/onlineleadcapture.aspx?x=54w7z229aa86uweq33bgp4dgml5shew9egqxpdkq8wulpjaeqbdhgnn64rbdj68z">
+<input type="hidden" name="debug" value="1" />
+<input type="hidden" name="debugEmail" value="james@crmnext.com" />
+<input type=hidden name="SuccessReturnURL" value="http://www.indianbank.in" />
+<input type=hidden name="FailureReturnURL" value="http://www.google.com" />
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+ <td width="100%" height="100%" valign="top">
+  <table cellSpacing="0" cellPadding="0" width="100%" border="0">
+ <colgroup>
+  <col align="right" width="20%"  />
+  <col width="30%"  />
+  <col align="right" width="20%"  />
+  <col width="30%"  />
+  </colgroup>
+  <tr>
+  <td>First Name</td>
+  <td>  <select id="Salutation" name="Salutation" style="width:100px">
+  <option value= "0"></option>
+  <option value= "100001">Co.</option>
+  <option value= "100000">LLP</option>
+  <option value= "1">Mr.</option>
+  <option value= "2">Ms.</option>
+  <option value= "3">Dr.</option>
+  <option value= "4">Mrs.</option>
+  </select>
+  <input type="text" id="FName" name="FName"></td>
+ <td> Last Name :&nbsp; </td>
+<td><input type="text" id="LName" name="LName" style="width:100px" /></td>
+ </tr>
+  <tr>
+ <td> Company :&nbsp; </td>
+<td><input type="text" id="Company" name="Company" style="width:100px" /></td>
+<td> Lead Source :&nbsp; </td>
+ <td>
+  <select id="LeadSource" name="LeadSource" style="width:100px">
+  <option value= "0"></option>
+  <option value= "32">Aggregator</option>
+  <option value= "34">Alliances</option>
+  <option value= "27">Aqar</option>
+  <option value= "37">ATM</option>
+  <option value= "28">Bulk Upload</option>
+  <option value= "43">Current Account System</option>
+  <option value= "35">DSU</option>
+  <option value= "42">Empower RMApp</option>
+  <option value= "30">Excel Import</option>
+  <option value= "31">HSBC Form</option>
+  <option value= "29">Import</option>
+  <option value= "39">Internal Webite</option>
+  <option value= "45">LOS System</option>
+  <option value= "33">Manual</option>
+  <option value= "36">Microsite</option>
+  <option value= "38">Mobile Banking</option>
+  <option value= "44">MPN</option>
+  <option value= "46">Net Banking</option>
+  <option value= "41">OAO</option>
+  <option value= "40">Third Party Webite</option>
+  <option value= "12">Branch Walk-In</option>
+  <option value= "14">Call Center</option>
+  <option value= "26">Digital</option>
+  <option value= "23">SMS</option>
+  <option value= "24">Social Channel</option>
+  <option value= "18">Campaign</option>
+  <option value= "16">Direct Mailer</option>
+  <option value= "11">Email</option>
+  <option value= "21">Facebook</option>
+  <option value= "17">Internet Banking</option>
+  <option value= "13">Phone</option>
+  <option value= "22">Twitter</option>
+  <option value= "10">Website</option>
+  <option value= "1">Website Download</option>
+  <option value= "2">Existing Customer</option>
+  <option value= "3">Internet Search</option>
+  <option value= "4">Own Research</option>
+  <option value= "5">Referal</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+ <td> Industry :&nbsp; </td>
+ <td>
+  <select id="Industry" name="Industry" style="width:100px">
+  <option value= "0"></option>
+  <option value= "16">Financial Service</option>
+  <option value= "1">Finance/Banking</option>
+  <option value= "2">Government/Aerospace/Defence</option>
+  <option value= "3">System Integrators / Consulting</option>
+  <option value= "4">Technology/Software</option>
+  <option value= "5">Telecommunications</option>
+  <option value= "6">Education / Research</option>
+  <option value= "7">Electronics</option>
+  <option value= "8">Energy</option>
+  <option value= "9">Healthcare</option>
+  <option value= "10">Insurance</option>
+  <option value= "11">Manufacturing</option>
+  <option value= "12">Transportation / Shipping /Cargo</option>
+  <option value= "13">Media / Entertainment</option>
+  <option value= "14">Utilities</option>
+  <option value= "15">Retail</option>
+  </select>
+  </td>
+  <td>Product</td>
+  <td>  <select id="Product" name="Product" onchange="UpdateProductName();" style="width:100px">
+  <option value="-1">--Select Value--</option> 
+      <option value="137">Auto Loan</option>
+      <option value="1180">Corporate Loan</option>
+      <option value="138">Home Loan</option>
+      <option value="1000005">Home Loan Balance Transfer</option>
+      <option value="1000004">Home Loan Top Up</option>
+      <option value="1236">Mortgage Finance</option>
+      <option value="1259">Personal Auto Finance</option>
+      <option value="136">Personal Loan</option>
+      <option value="144">Project Finanace Loan</option>
+      <option value="146">Term Loans</option>
+      <option value="147">Working Capital Loan</option>
+ </select><input id="ProductName" name="ProductName" type="hidden" style="width:100px" value="Aaelaty Bi Aman" /> </td>
+  </tr>
+  <tr>
+  <td hidden> Status Code </td>
+  <td hidden>  <select id="StatusCode" name="StatusCode" style="width:100px">
+  <option value= "100003" selected>New</option>
+ </select> </td>
+ <td> Address :&nbsp; </td>
+<td><input type="text" id="Address" name="Address" style="width:100px" /></td>
+ </tr>
+  <tr>
+ <td> City :&nbsp; </td>
+<td><input type="text" id="City" name="City" style="width:100px" /></td>
+<td> State :&nbsp; </td>
+<td><input type="text" id="State" name="State" style="width:100px" /></td>
+ </tr>
+  <tr>
+ <td> Mobile Phone :&nbsp; </td>
+<td><input type="text" id="MobPhone" name="MobPhone" style="width:100px" /></td>
+<td> Zip :&nbsp; </td>
+<td><input type="text" id="Zip" name="Zip" style="width:100px" /></td>
+ </tr>
+  <tr>
+ <td> Email :&nbsp; </td>
+<td><input type="text" id="Email" name="Email" style="width:100px" /></td>
+ <td hidden> Layout </td>
+  <td hidden>  <select id="Layout" name="Layout" style="width:100px">
+  <option value= "102664" selected>Assets</option>
+  
+ </select> </td>
+  </tr>
+  <tr>
+  <td>Lead Priority1 :&nbsp;</td>
+  <td>  <select id="cust_4623" name="cust_4623" style="width:100px">
+  <option value="0">-- Select Item --</option>
+  <option value= "High">High</option>
+  <option value= "Medium">Medium</option>
+  <option value= "Low">Low</option>
+ </select> </td>
+  <td>Employment Type :&nbsp;</td>
+  <td>  <select id="cust_25" name="cust_25" style="width:100px">
+  <option value="0">-- Select Item --</option>
+  <option value= "Salaried">Salaried</option>
+  <option value= "Self Employed">Self Employed</option>
+ </select> </td>
+  </tr>
+  <tr>
+  <td>Net Monthly Income :&nbsp;</td>
+  <td> <input type="text" id="cust_43" name="cust_43" value=""  style="width:100px" /> </td>
+  <td>Date of Birth :&nbsp;</td>
+  <td> <input type="text" id="cust_48" name="cust_48" value=""  style="width:100px" /> </td>
+  </tr>
+  <tr>
+  <td>Loan Amount Required :&nbsp;</td>
+  <td> <input type="text" id="cust_138" name="cust_138" value=""  style="width:100px" /> </td>
+  <td>Position in Company :&nbsp;</td>
+  <td>  <select id="cust_1751" name="cust_1751" style="width:100px">
+  <option value="0">-- Select Item --</option>
+  <option value= "Manager">Manager</option>
+  <option value= "General Manager">General Manager</option>
+  <option value= "Project Manager">Project Manager</option>
+  <option value= "Senior Manager">Senior Manager</option>
+  <option value= "Other">Other</option>
+ </select> </td>
+  </tr>
+  <tr>
+  <td>Marital Status :&nbsp;</td>
+  <td>  <select id="cust_1843" name="cust_1843" style="width:100px">
+  <option value="0">-- Select Item --</option>
+  <option value= "Married">Married</option>
+  <option value= "Un-Married">Un-Married</option>
+  <option value= "Others">Others</option>
+ </select> </td>
+  <td>Gender :&nbsp;</td>
+  <td> <input type="text" id="cust_1937" name="cust_1937" value=""  style="width:100px" /> </td>
+  </tr>
+  <tr height="10px"><td>&nbsp;</td></tr>
+  <tr>
+  <td colspan="4" align="center">
+  <input type="submit" name="submit" id="submit" value="Submit" onclick="return IsValidForm();" />
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+ </form><script >
+ function UpdateProductName()
+{
+ var prodObj = document.getElementById('Product');
+ var prodNameObj = document.getElementById('ProductName');
+ prodNameObj.value = prodObj.options[prodObj.selectedIndex].text;
+}
+ function UpdateTerritoryName()
+{
+ var terrObj = document.getElementById('Territory');
+ var terrNameObj = document.getElementById('TerritoryName');
+ terrNameObj.value = terrObj.options[terrObj.selectedIndex].text;
+}
+ function IsValidForm() 
+ {
+ var errMessage = '';
+	if ( document.getElementById('LName').value == '') 
+ { 
+ errMessage = 'Enter LastName.\n';
+ }
+	if ( !IsValidEmail() ) 
+ { 
+ errMessage += 'Not a valid EmailID.\n';
+ } 
+ 	if ( errMessage != '' ){ alert(errMessage); return false; }
+ return true; 
+ } function IsValidEmail() 
+ { if (document.getElementById('Email') == null) return true;   var inem = document.getElementById("Email").value; 
+ if( inem != null && inem !='') 
+{
+  var filter=/^(\w+(?:\.\w+)*)@((?:\w+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; 
+ if  ( !filter.test(inem) ) 
+ return false; 
+ }  return true; 
+ }  function IsValidWebURL() 
+ { return true; 
+ 	var website = document.getElementById("Website").value; 
+ 	var URL		= /^((file|http):\/\/\S)*$/; 
+	if ( !URL.test(website) ) 
+ return false; 
+ 	return true; 
+ }</script></body></html>
